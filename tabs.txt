@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>REFURBISHING</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+ 
+  <style>
+  *{
+  box-sizing:border-box;
+    padding:0;
+    margin:0;
+  }
+.r_section-1{
+  background-image:url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/pexels-shvets-production-7203788_1.png?v=1657954643);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  padding:50px 0px;
+  height:600px;
+  width:100%;
+  z-index:1;
+}
+.r_section-3{
+  padding:50px 0px;
+  width:100%;
+}
+.bg-overlay{
+  position:absolute;
+  display:block!important;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color:#00000033;
+  z-index:2
+}
+  
+.container{
+  width:85%;
+  text-align:center;
+  margin:0 auto;
+  z-index:3;
+}
+.p-relative{
+  position:relative;
+}
+.d-flex{
+  display:flex;
+}
+.align-self-center{
+  align-self: center;
+}
+.align-items-center{
+  align-items: center;
+}
+.r_section-1 h1{
+  font-weight:600;
+  font-size: 64px;
+  font-family:'poppins';
+  color:#fff;
+  margin:0;
+  text-transform:uppercase;
+}
+.r_section-1 h3{
+  font-weight:400;
+  font-size: 24px;
+  font-family:'poppins';
+  color:#fff;
+  margin:0;
+  margin:10px 0px;
+}
+.tab-heading{
+  font-weight:600;
+}
+.page-title h2{
+  font-weight:600;
+  font-size: 36px;
+  line-height:48px;
+  font-family:'poppins';
+  color:#000;
+  margin:0;
+  text-align:left;
+}
+.page-title p{
+  font-weight:400;
+  font-size: 18px;
+  line-height:26px;
+  font-family:'poppins';
+  color:#5A5A5A;
+  margin:10px 0px;
+  text-align:left;
+}
+.info-div-bg-style{
+  background-color: rgba(17, 185, 143, 0.2);
+  border-radius: 40px;
+  width:80%;
+}
+    .info-div {
+    padding:50px!important;
+    }
+.info-img{
+  width: 100%;
+}
+.img-info-div {
+  align-self: center;
+}
+.w-80{
+  width: 80%;
+}
+.w-95{
+  width: 95%!important;
+}
+.py-50{
+  padding: 50px 0;
+}
+.p-50{
+  padding: 50px;
+}
+.mx-auto{
+  margin: 0 auto;
+}
+.mr-20{
+  margin-right: 20px!important;
+}
+.ml-50{
+  margin-left: 50px;
+}
+.col-8{
+  width: 85%;
+}
+.col-4{
+  width:15%;
+}
+.p-0{
+  padding: 0;
+}
+.pt-0{
+  padding-top: 0;
+}
+.pb-0{
+  padding-bottom: 0;
+}
+.pl-67{
+  padding-left: 67px;
+}
+.text-center{
+  text-align: center!important;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+
+    
+/*Tabs*/
+    ui-widget-header {
+      background-color: unset!important;
+    }
+    .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+     background-color: unset!important;
+    }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+     background-color: unset!important;
+    }
+    .ui-widget-content {
+      background-color: unset!important;
+    }
+ul .li-bg-1{
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-5.png?v=1657966981)!important;
+  height: 200px!important;
+  background-position: center!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  position: relative!important;
+  width: 20%!important;
+  background-color: unset!important;
+  border: none!important;
+  color: #fff!important;
+}
+ul .li-bg-2{
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-7.png?v=1657969350)!important;
+  height: 200px!important;
+  background-position: center!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  position: relative!important;
+  width: 20%!important;
+  background-color: unset!important;
+  border: none!important;
+  color: #fff!important;
+}
+ul .li-bg-3{
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-9.png?v=1657969854)!important;
+  height: 200px!important;
+  background-position: center!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  position: relative!important;
+  width: 20%!important;
+  background-color: unset!important;
+  border: none!important;
+  color: #fff!important;
+}
+ul .li-bg-4{
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-11.png?v=1657969855)!important;
+  height: 200px!important;
+  background-position: center!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  position: relative!important;
+  width: 20%!important;
+  background-color: unset!important;
+  border: none!important;
+  color: #fff!important;
+}
+ul .li-bg-5{
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-13.png?v=1657969854)!important;
+  height: 200px!important;
+  background-position: center!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  position: relative!important;
+  width: 20%!important;
+  background-color: unset!important;
+  border: none!important;
+  color: #fff!important;
+}
+ul .li-bg-6{
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-15.png?v=1657969854)!important;
+  height: 200px!important;
+  background-position: center!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  position: relative!important;
+  width: 20%!important;
+  background-color: unset!important;
+  border: none!important;
+  color: #fff!important;
+}
+.tab-menu {
+  position: absolute;
+  left: 14%;
+  bottom: 18%;
+  color: #fff!important;
+  font-weight: 600!important;
+  font-size: 16px!important;
+  line-height: 20px!important;
+  font-family: 'poppins'!important;
+}
+.ui-tabs-anchor{
+  padding-top: 160px!important;
+  width: 100%!important;
+}
+.ui-widget-header {
+  border:  none!important;
+  background: unset!important;
+  color: #fff!important;
+  font-weight: bold!important;
+}
+.r-tabs-ul .li-bg-1.active, .r-tabs-ul .li-bg-1:hover, .r-tabs-ul .li-bg-1:focus {
+  border: none!important;
+  background-color: unset!important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-4.png?v=1657966828)!important;
+}
+.r-tabs-ul .li-bg-2.active, .r-tabs-ul .li-bg-2:hover, .r-tabs-ul .li-bg-2:focus {
+  border: none!important;
+  background-color: unset!important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-6.png?v=1657969350)!important;
+}
+.r-tabs-ul .li-bg-3.active, .r-tabs-ul .li-bg-3:hover, .r-tabs-ul .li-bg-3:focus {
+  border: none!important;
+  background-color: unset!important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-8.png?v=1657969856)!important;
+}
+.r-tabs-ul .li-bg-4.active, .r-tabs-ul .li-bg-4:hover, .r-tabs-ul .li-bg-4:focus {
+  border: none!important;
+  background-color: unset!important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-10.png?v=1657969854)!important;
+}
+.r-tabs-ul .li-bg-5.active, .r-tabs-ul .li-bg-5:hover, .r-tabs-ul .li-bg-5:focus {
+  border: none!important;
+  background-color: unset!important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-12.png?v=1657969854)!important;
+}
+.r-tabs-ul .li-bg-6.active, .r-tabs-ul .li-bg-6:hover, .r-tabs-ul .li-bg-6:focus {
+  border: none!important;
+  background-color: unset!important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0567/8435/5380/files/Untitled-14.png?v=1657969854)!important;
+}
+.ui-widget.ui-widget-content {
+  border: none!important;
+}
+.ui-tabs .ui-tabs-panel {
+  padding: 20px 0!important;
+  font-weight: 400!important;
+    font-size: 18px!important;
+    line-height: 26px!important;
+    font-family: 'poppins'!important;
+    color: #5A5A5A!important;
+}
+    .ui-tabs .ui-tabs-nav li {
+      float: unset!important;
+    }
+    ul.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
+    display: flex!important;
+}
+@media screen and (max-width: 1024px) {  
+    .info-div-bg-style{
+  width:100%;
+}
+  .r_section-1 h1{
+    font-size: 48px!important;
+  }
+  .r_section-1 h3{
+    font-size: 18px!important;
+  }
+  .page-title h2 {
+    font-size: 24px!important;
+    line-height: 36px!important;
+  }
+  .page-title p {
+    font-size: 16px!important;
+    line-height: 20px!important;
+  }
+  .tab-menu {
+    font-size: 14px!important;
+    line-height: 18px!important;
+  }
+  ul .li-bg-1{
+    width: 18%!important;
+}
+ul .li-bg-2{
+  width: 18%!important;
+}
+ul .li-bg-3{
+  width: 18%!important;
+}
+ul .li-bg-4{
+  width: 18%!important;
+}
+ul .li-bg-5{
+  width: 18%!important;
+}
+ul .li-bg-6{
+  width: 18%!important;
+}
+  ul.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
+    flex-wrap:wrap!important;
+}
+}
+    
+@media screen and (max-width: 768px) {    
+  .r_section-1 h1{
+    font-size: 48px!important;
+  }
+  .r_section-1 h3{
+    font-size: 18px!important;
+  }
+  .page-title h2 {
+    font-size: 24px!important;
+    line-height: 36px!important;
+  }
+  .page-title p {
+    font-size: 16px!important;
+    line-height: 20px!important;
+  }
+ul .li-bg-1{
+  width: 23%!important;
+  height:160px!important;
+}
+ul .li-bg-2{
+  width: 23%!important;
+  height:160px!important;
+}
+ul .li-bg-3{
+  width: 23%!important;
+  height:160px!important;
+}
+ul .li-bg-4{
+  width: 23%!important;
+  height:160px!important;
+}
+ul .li-bg-5{
+  width: 23%!important;
+  height:160px!important;
+}
+ul .li-bg-6{
+  width: 23%!important;
+  height:160px!important;
+}
+  .ui-tabs-anchor {
+    padding-top: 140px!important;
+  }
+  .tab-menu {
+    left: 10%;
+    bottom: 14%;
+  }
+  .info-img {
+    width: 100%!important;
+}
+  .info-div {
+    padding: 30px!important;
+}
+}
+
+  
+@media screen and (max-width: 430px) {
+  .r_section-1 h1{
+    font-size: 28px!important;
+  }
+  .r_section-1 h3{
+    font-size: 14px!important;
+  }
+  .page-title h2 {
+  font-size: 18px!important;
+    line-height: 24px!important;
+  }
+  .page-title p {
+    font-size: 14px!important;
+    line-height: 20px!important;
+  }
+  .container {
+    width: 90%!important;
+  }
+  ul .li-bg-1{
+        width: 30%!important;
+    height: 115px!important;
+}
+ul .li-bg-2{
+      width: 30%!important;
+    height: 115px!important;
+}
+ul .li-bg-3{
+      width: 30%!important;
+    height: 115px!important;
+}
+ul .li-bg-4{
+      width: 30%!important;
+    height: 115px!important;
+}
+ul .li-bg-5{
+      width: 30%!important;
+    height: 115px!important;
+}
+ul .li-bg-6{
+      width: 30%!important;
+    height: 115px!important;
+}
+  .ui-tabs-anchor {
+    padding-top: 100px!important;
+  }
+  .tab-menu {
+    left: 10%!important;
+    bottom: 10%!important;
+    font-size: 10px!important;
+    line-height: 14px!important;
+  }
+  .tabs-text{
+    font-size: 14px!important;
+    line-height: 20px!important;
+}
+  .info-div {
+    padding:20px!important;
+    }
+  .col-4 {
+    width: 100%!important;
+}
+  .col-8 {
+    width: 100%!important;
+}
+  .info-div{
+    flex-wrap:wrap!important;
+}
+  .info-img {
+    width: 40%!important;
+}
+}
+        @media screen and (max-width: 390px){
+.tab-menu {
+    left: 7%!important;
+    bottom: 13%!important;
+    font-size: 10px!important;
+  line-height: 13px!important;
+}
+}
+  </style>
+</head>
+<body>
+    
+      <section class="r_section-3 pb-0">
+        <div class="container align-self-center">
+            
+            <div id="tabs">
+                <ul class="r-tabs-ul">
+                  <li class="li-bg-1 active"><a href="#tabs-1" class="ui-tabs-anchor-1"><span class="tab-menu">REGISTRATION</span></a></li>
+                  <li class="li-bg-2"><a href="#tabs-2" class="ui-tabs-anchor-2"><span class="tab-menu">DATA REMOVAL</span></a></li>
+                  <li class="li-bg-3"><a href="#tabs-3" class="ui-tabs-anchor-3"><span class="tab-menu">TESTING &<br>REPAIRING</span></a></li>
+                  <li class="li-bg-4"><a href="#tabs-4" class="ui-tabs-anchor-4"><span class="tab-menu">CLEANING</span></a></li>
+                  <li class="li-bg-5"><a href="#tabs-5" class="ui-tabs-anchor-5"><span class="tab-menu">GRADING</span></a></li>
+                  <li class="li-bg-6"><a href="#tabs-6" class="ui-tabs-anchor-6"><span class="tab-menu">PACKING &<br>SHIPPING</span></a></li>
+                </ul>
+                <div id="tabs-1">
+                  <p class="text-left tabs-text">In the very beginning, every mobile device is registered in our system. We check the origin of the device and take records of the devices’ specifications. The serial number and so-called IMEI as well as the model number, storage size and colour are noted in the system.</p>
+                </div>
+                <div id="tabs-2">
+                    <p class="text-left tabs-text">The next step is to ensure that any data on the devices is fully removed. Therefore, every single device is securely wiped and unlocked. Any content on the device is erased and the settings are resetted.</p>
+                </div>
+                <div id="tabs-3">
+                  <p class="text-left tabs-text">Once the device is fully erased, it gets tested to find out whether there are any defects. If so, the device is forwarded to our repair team. Any faulty components are fixed or exchanged. To guarantee full functionality, the device gets tested once again - by hand and with the use of our specialised testing software. Only those devices that have passed all functions are forwarded to the next step. More than 50 functions are tested:<br>
+                  </p>
+                  <p class="text-left tabs-text"><br>
+                    For example:
+                    Accelerometer Bluetooth Brightness Digitizer Ear Speaker Face ID Flashlight Flip Switch Force Touch Front Camera Front Camera Quality Front Microphone Front Video Camera Glass Cracked Gyroscope LCD Loud Speaker Microphone NFC Network Connectivity 
+                    Power Button Proximity Sensor Rear Camera Rear Camera Quality Rear Video Camera Screen Rotation Sim Reader Telephoto Camera Telephoto Camera Quality Vibration 
+                    Video Microphone Volume Down Button Volume Up Button Wifi Wireless Charging iCloud Lock
+                </p>
+                </div>
+                <div id="tabs-4">
+                    <p class="text-left tabs-text">
+                        Once we can guarantee that all technical functions are in place, we take care of the outer appearance of the device. We professionally clean and polish the screen and the case to ensure that the best possible look is achieved.
+                    </p>
+                </div>
+                <div id="tabs-5">
+                    <p class="text-left tabs-text">
+                        Based on the final outer condition, each device receives a grade. We make a distinction based on the amount and severity of signs of usage on the screen and the body of the device. Depending on the appearance, the device is categorised as “Excellent”, “Very Good” or “Good”. A more detailed description of the conditions can be found here.
+                    </p>
+                </div>
+                <div id="tabs-6">
+                    <p class="text-left tabs-text">
+                        The device is then packed into a sustainable cardboard box. The package includes a cable and an adapter to charge your device. Mobile phones will also include a SIM tray opener. Once packed, the device is ready to be shipped to you. Find out which countries we ship to.
+                    </p>
+                </div>
+              </div>
+        </div>
+      </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+  <script>
+       $(document).on("click",".ui-tabs-anchor-1",function() {
+        $(".ui-tab").removeClass('active');
+  		$(this).parent().addClass('active');
+    });
+    $(document).on("click",".ui-tabs-anchor-2",function() {
+        $(".ui-tab").removeClass('active');
+  		$(this).parent().addClass('active');
+    });
+    $(document).on("click",".ui-tabs-anchor-3",function() {
+        $(".ui-tab").removeClass('active');
+  		$(this).parent().addClass('active');
+    });
+    $(document).on("click",".ui-tabs-anchor-4",function() {
+        $(".ui-tab").removeClass('active');
+  		$(this).parent().addClass('active');
+    });
+    $(document).on("click",".ui-tabs-anchor-5",function() {
+        $(".ui-tab").removeClass('active');
+  		$(this).parent().addClass('active');
+    });
+    $(document).on("click",".ui-tabs-anchor-6",function() {
+        $(".ui-tab").removeClass('active');
+  		$(this).parent().addClass('active');
+    });
+    
+  </script>
+</body>
+</html>
